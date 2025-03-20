@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.vr.dao.Museum_newsDao">
+
+    <!-- 可根据自己的需求，是否要使用 -->
+    <resultMap type="com.vr.entity.Museum_newsEntity" id="museum_newsMap">
+        <result property="enname" column="enname"/>
+        <result property="encover" column="encover"/>
+        <result property="enarea" column="enarea"/>
+        <result property="enintroduction" column="enintroduction"/>
+        <result property="mntime" column="mntime"/>
+        <result property="mnaddress" column="mnaddress"/>
+        <result property="mnheader" column="mnheader"/>
+        <result property="mntelephone" column="mntelephone"/>
+        <result property="mnintroduction" column="mnintroduction"/>
+        <result property="mnbus" column="mnbus"/>
+        <result property="clicktime" column="clicktime"/>
+        <result property="clicknum" column="clicknum"/>
+    </resultMap>
+
+    <select id="selectListVO"
+            resultType="com.vr.entity.vo.Museum_newsVO" >
+        SELECT * FROM museum_news  museum_news
+        <where> 1=1 ${ew.sqlSegment}</where>
+    </select>
+
+    <select id="selectVO"
+            resultType="com.vr.entity.vo.Museum_newsVO" >
+        SELECT  museum_news.* FROM museum_news  museum_news
+        <where> 1=1 ${ew.sqlSegment}</where>
+    </select>
+
+    <select id="selectListView"
+            resultType="com.vr.entity.view.Museum_newsView" >
+
+        SELECT  museum_news.* FROM museum_news  museum_news
+        <where> 1=1 ${ew.sqlSegment}</where>
+    </select>
+
+    <select id="selectView"
+            resultType="com.vr.entity.view.Museum_newsView" >
+        SELECT * FROM museum_news  museum_news <where> 1=1 ${ew.sqlSegment}</where>
+    </select>
+
+
+</mapper>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.vr.dao.Museum_roamDao">
+
+    <resultMap type="com.vr.entity.Museum_roamEntity" id="museum_roamMap">
+        <result property="mrname" column="mrname"/>
+        <result property="mrcover" column="mrcover"/>
+        <result property="mrposition" column="mrposition"/>
+        <result property="mrintroduction" column="mrintroduction"/>
+        <result property="mrvideo" column="mrvideo"/>
+        <result property="mrcomment" column="mrcomment"/>
+        <result property="mrcollect" column="mrcollect"/>
+        <result property="mnheader" column="mnheader"/>
+        <result property="clicknum" column="clicknum"/>
+        <result property="clicktime" column="clicktime"/>
+    </resultMap>
+
+    <select id="selectListVO"
+            resultType="com.vr.entity.vo.Museum_roamVO" >
+        SELECT * FROM museum_roam  museum_roam
+        <where> 1=1 ${ew.sqlSegment}</where>
+    </select>
+
+    <select id="selectVO"
+            resultType="com.vr.entity.vo.Museum_roamVO" >
+        SELECT  museum_roam.* FROM museum_roam  museum_roam
+        <where> 1=1 ${ew.sqlSegment}</where>
+    </select>
+
+    <select id="selectListView"
+            resultType="com.vr.entity.view.Museum_roamView" >
+
+        SELECT  museum_roam.* FROM museum_roam  museum_roam
+        <where> 1=1 ${ew.sqlSegment}</where>
+    </select>
+
+    <select id="selectView"
+            resultType="com.vr.entity.view.Museum_roamView" >
+        SELECT * FROM museum_roam  museum_roam <where> 1=1 ${ew.sqlSegment}</where>
+    </select>
+
+</mapper>
