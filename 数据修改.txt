@@ -1,0 +1,245 @@
+SELECT VERSION();
+
+
+-- 更新达芬奇设计的锯床模型相关信息
+UPDATE cangpinxinxi
+SET 
+    cangpinleibie = "文艺复兴时期机械设计模型",
+    cangpinniandai = "15世纪末",
+    youguanlishi = "达芬奇在15世纪末进行了众多机械设计，其手稿中记录的锯床模型展现了当时先进的机械原理和设计理念，对后世机械发展产生了深远影响。",
+    changguanweizhi = "中国工业博物馆 - 古代工业文明展区",
+    cangpinjianjie = "依据达芬奇手稿复原的锯床模型，体现了当时机械设计的精湛技艺。",
+    cangpinxiangqing = "该锯床模型采用了独特的传动系统和切割结构，在当时具有创新性。模型材质为木质和金属，通过精细加工和组装而成。"
+WHERE cangpinmingcheng = "达芬奇设计的锯床模型";
+
+-- 更新C630型车床相关信息
+UPDATE cangpinxinxi
+SET 
+    cangpinleibie = "普通卧式车床",
+    cangpinniandai = "20世纪60 - 90年代",
+    youguanlishi = "C630型车床是我国在特定时期广泛应用的普通卧式车床，为我国工业发展做出了重要贡献，在机械制造、零部件加工等领域发挥了关键作用。",
+    changguanweizhi = "中国工业博物馆 - 机床展区",
+    cangpinjianjie = "C630型车床具有较大的加工范围和稳定的性能，是当时工业生产中的常用设备。",
+    cangpinxiangqing = "该车床床身采用优质铸铁，具有良好的刚性和稳定性。主轴转速范围广，可满足不同加工需求。配备有多种刀具和附件，能进行车削、钻孔、镗孔等多种加工工艺。"
+WHERE cangpinmingcheng = "C630型车床";
+
+-- 更新C512单柱立式车床相关信息
+UPDATE cangpinxinxi
+SET 
+    cangpinleibie = "单柱立式车床",
+    cangpinniandai = "20世纪70 - 80年代",
+    youguanlishi = "C512单柱立式车床在当时是我国机械加工领域的重要设备，主要用于加工大型盘类、套类零件，在重型机械制造等行业应用广泛。",
+    changguanweizhi = "中国工业博物馆 - 机床展区",
+    cangpinjianjie = "C512单柱立式车床具有较高的加工精度和生产效率，适用于大型零件的加工。",
+    cangpinxiangqing = "该车床采用单柱结构，工作台可绕垂直轴线旋转，刀具可在垂直和水平方向上移动。其立柱和床身采用优质钢材焊接而成，具有良好的刚性和抗振性。"
+WHERE cangpinmingcheng = "C512单柱立式车床";
+
+-- 更新老式车床相关信息
+UPDATE cangpinxinxi
+SET 
+    cangpinleibie = "早期普通车床",
+    cangpinniandai = "20世纪50 - 60年代",
+    youguanlishi = "早期的老式车床是我国工业起步阶段的重要设备，为我国培养了大量的机械加工人才，推动了我国机械工业的发展。",
+    changguanweizhi = "中国工业博物馆 - 机床展区",
+    cangpinjianjie = "老式车床结构简单，操作方便，是我国早期工业生产的基础设备。",
+    cangpinxiangqing = "该车床采用皮带传动，主轴转速有限。床身和导轨采用铸铁材质，经过淬火和磨削处理，具有较好的耐磨性。主要用于简单的车削加工。"
+WHERE cangpinmingcheng = "老式车床";
+
+-- 更新M4220型珩磨机床相关信息
+UPDATE cangpinxinxi
+SET 
+    cangpinleibie = "珩磨机床",
+    cangpinniandai = "20世纪80 - 90年代",
+    youguanlishi = "M4220型珩磨机床是当时国内先进的精密加工设备，主要用于加工高精度的内孔表面，在航空航天、汽车制造等领域有重要应用。",
+    changguanweizhi = "中国工业博物馆 - 精密加工展区",
+    cangpinjianjie = "M4220型珩磨机床能有效提高内孔的尺寸精度和表面质量。",
+    cangpinxiangqing = "该机床采用液压传动和电气控制相结合的方式，具有自动进给、自动测量等功能。珩磨头采用特殊的磨料和结构，可实现高效、精密的珩磨加工。"
+WHERE cangpinmingcheng = "M4220型珩磨机床";
+
+-- 更新Z3140A万向摇臂钻床相关信息
+UPDATE cangpinxinxi
+SET 
+    cangpinleibie = "万向摇臂钻床",
+    cangpinniandai = "20世纪90年代 - 21世纪初",
+    youguanlishi = "Z3140A万向摇臂钻床是一种通用性较强的钻床，可在不同位置和角度进行钻孔、扩孔、铰孔等加工，在机械制造、模具制造等行业广泛使用。",
+    changguanweizhi = "中国工业博物馆 - 机床展区",
+    cangpinjianjie = "Z3140A万向摇臂钻床操作灵活，能适应多种加工需求。",
+    cangpinxiangqing = "该钻床摇臂可绕立柱回转和升降，主轴箱可在摇臂上水平移动，方便刀具对准加工位置。主轴转速和进给量可通过变速手柄进行调整。"
+WHERE cangpinmingcheng = "Z3140A万向摇臂钻床";
+
+-- 更新CAK6150N型车床相关信息
+UPDATE cangpinxinxi
+SET 
+    cangpinleibie = "数控车床",
+    cangpinniandai = "21世纪初",
+    youguanlishi = "CAK6150N型车床是我国数控技术发展阶段的代表性产品，标志着我国机床制造业向自动化、智能化方向迈进。",
+    changguanweizhi = "中国工业博物馆 - 数控加工展区",
+    cangpinjianjie = "CAK6150N型车床具有高精度、高效率、自动化程度高的特点。",
+    cangpinxiangqing = "该车床采用先进的数控系统，可实现复杂零件的精确加工。配备有自动换刀装置和液压卡盘，提高了生产效率。床身采用斜床身结构，具有良好的排屑性能。"
+WHERE cangpinmingcheng = "CAK6150N型车床";
+
+-- 更新THY5640型立式加工中心相关信息
+UPDATE cangpinxinxi
+SET 
+    cangpinleibie = "立式加工中心",
+    cangpinniandai = "21世纪10年代",
+    youguanlishi = "THY5640型立式加工中心是我国高端装备制造业发展的成果之一，可实现多工序的集中加工，提高了生产效率和加工精度。",
+    changguanweizhi = "中国工业博物馆 - 数控加工展区",
+    cangpinjianjie = "THY5640型立式加工中心具备强大的加工能力和灵活性具备强大的加工能力和灵活性。",
+    cangpinxiangqing = "该加工中心采用高速主轴和高精度滚珠丝杠，可实现快速、准确的定位和加工。配备有刀库，可自动更换刀具，适应不同的加工需求。"
+WHERE cangpinmingcheng = "THY5640型立式加工中心";
+
+-- 更新VMC0656e型五轴加工中心相关信息
+UPDATE cangpinxinxi
+SET 
+    cangpinleibie = "五轴联动加工中心",
+    cangpinniandai = "21世纪10年代后期",
+    youguanlishi = "VMC0656e型五轴加工中心代表了我国高端机床制造的先进水平，能够加工复杂曲面和高精度零件，在航空航天、船舶制造等领域有重要应用。",
+    changguanweizhi = "中国工业博物馆 - 高端装备展区",
+    cangpinjianjie = "VMC0656e型五轴加工中心具有五轴联动功能，可实现复杂零件的高效加工。",
+    cangpinxiangqing = "该加工中心采用先进的五轴联动技术和智能化控制系统，可实现刀具在空间的任意姿态调整。具备高精度的线性导轨和光栅尺，保证了加工精度。"
+WHERE cangpinmingcheng = "VMC0656e型五轴加工中心";
+
+-- 更新上海SH760相关信息
+UPDATE cangpinxinxi
+SET 
+    cangpinleibie = "国产轿车",
+    cangpinniandai = "20世纪60 - 70年代",
+    youguanlishi = "上海SH760是我国自主生产的第一批轿车之一，见证了我国汽车工业的起步和发展，在当时具有重要的政治和社会意义。",
+    changguanweizhi = "中国工业博物馆 - 汽车展区",
+    cangpinjianjie = "上海SH760是我国早期国产轿车的代表车型。",
+    cangpinxiangqing = "该车搭载直列六缸发动机，具有较好的动力性能。车身采用三厢式设计，造型稳重。内饰简洁实用，为当时的公务和商务出行提供了重要的交通工具。"
+WHERE cangpinmingcheng = "上海SH760";
+
+-- 更新雪铁龙CX相关信息
+UPDATE cangpinxinxi
+SET 
+    cangpinleibie = "经典法系轿车",
+    cangpinniandai = "20世纪70 - 80年代",
+    youguanlishi = "雪铁龙CX是法国雪铁龙公司在该时期推出的一款具有创新性的轿车，以其独特的造型和先进的技术在汽车发展史上留下了重要印记。",
+    changguanweizhi = "中国工业博物馆 - 汽车展区",
+    cangpinjianjie = "雪铁龙CX具有独特的设计和先进的技术特点。",
+    cangpinxiangqing = "该车采用了液压悬挂系统，可实现车身高度的自动调节，提高了行驶的舒适性和稳定性。外观设计流畅，具有强烈的未来感。"
+WHERE cangpinmingcheng = "雪铁龙CX";
+
+-- 更新林肯加长车相关信息
+UPDATE cangpinxinxi
+SET 
+    cangpinleibie = "豪华加长轿车",
+    cangpinniandai = "20世纪90年代 - 21世纪初",
+    youguanlishi = "林肯加长车是美国林肯品牌推出的豪华车型，常被用于高端商务接待、婚礼等场合，象征着奢华与尊贵。",
+    changguanweizhi = "中国工业博物馆 - 汽车展区",
+    cangpinjianjie = "林肯加长车具有宽敞的内部空间和豪华的配置。",
+    cangpinxiangqing = "该车车身经过加长处理，内部配备了豪华座椅、音响系统、酒吧等设施。动力强劲，行驶平稳。"
+WHERE cangpinmingcheng = "林肯加长车";
+
+-- 更新红旗牌旅行车CA - 630相关信息
+UPDATE cangpinxinxi
+SET 
+    cangpinleibie = "国产旅行车",
+    cangpinniandai = "20世纪80年代",
+    youguanlishi = "红旗牌旅行车CA - 630是我国自主研发的旅行车，体现了当时我国汽车工业在车型多样化方面的探索。",
+    changguanweizhi = "中国工业博物馆 - 汽车展区",
+    cangpinjianjie = "红旗牌旅行车CA - 630兼顾了实用性和舒适性。",
+    cangpinxiangqing = "该车搭载了国产发动机，具有较好的动力性能。车身设计宽敞，可容纳较多乘客和行李。内饰采用了当时较为先进的材料和工艺。"
+WHERE cangpinmingcheng = "红旗牌旅行车CA - 630";
+
+
+UPDATE yonghu
+SET addtime = CASE id
+    WHEN 1 THEN '2025-09-25 10:30:00'
+    WHEN 2 THEN '2025-10-20 14:30:00'
+    WHEN 3 THEN '2025-06-01 12:00:00'
+    WHEN 4 THEN '2025-11-15 14:00:00'
+    WHEN 5 THEN '2025-09-20 10:00:00'
+    WHEN 6 THEN '2025-11-05 16:30:00'
+    WHEN 7 THEN '2025-09-10 12:30:00'
+    WHEN 8 THEN '2025-11-30 11:00:00'
+    WHEN 9 THEN '2025-12-10 15:30:00'
+    WHEN 10 THEN '2025-02-20 09:30:00'
+    WHEN 11 THEN '2025-06-20 14:30:00'
+    WHEN 12 THEN '2025-08-10 11:30:00'
+END
+WHERE id BETWEEN 1 AND 12;     
+
+
+UPDATE activity_feedback
+SET
+created_at = CASE id
+WHEN 1 THEN DATE_ADD(DATE_ADD('2025-09-26 10:30:00', INTERVAL 3 DAY), INTERVAL 1 DAY)
+WHEN 2 THEN DATE_ADD(DATE_ADD('2025-10-21 14:30:00', INTERVAL 3 DAY), INTERVAL 1 DAY)
+WHEN 3 THEN DATE_ADD(DATE_ADD('2025-06-02 12:00:00', INTERVAL 3 DAY), INTERVAL 1 DAY)
+WHEN 4 THEN DATE_ADD(DATE_ADD('2025-11-16 14:00:00', INTERVAL 3 DAY), INTERVAL 1 DAY)
+WHEN 5 THEN DATE_ADD(DATE_ADD('2025-09-21 10:00:00', INTERVAL 3 DAY), INTERVAL 1 DAY)
+WHEN 6 THEN DATE_ADD(DATE_ADD('2025-11-06 16:30:00', INTERVAL 3 DAY), INTERVAL 1 DAY)
+WHEN 7 THEN DATE_ADD(DATE_ADD('2025-09-11 12:30:00', INTERVAL 3 DAY), INTERVAL 1 DAY)
+WHEN 8 THEN DATE_ADD(DATE_ADD('2025-12-01 11:00:00', INTERVAL 3 DAY), INTERVAL 1 DAY)
+WHEN 9 THEN DATE_ADD(DATE_ADD('2025-12-11 15:30:00', INTERVAL 3 DAY), INTERVAL 1 DAY)
+WHEN 10 THEN DATE_ADD(DATE_ADD('2025-02-21 09:30:00', INTERVAL 3 DAY), INTERVAL 1 DAY)
+WHEN 11 THEN DATE_ADD(DATE_ADD('2025-06-21 14:30:00', INTERVAL 3 DAY), INTERVAL 1 DAY)
+WHEN 12 THEN DATE_ADD(DATE_ADD('2025-08-11 11:30:00', INTERVAL 3 DAY), INTERVAL 1 DAY)
+END,
+updated_at = CASE id
+WHEN 1 THEN DATE_ADD(DATE_ADD(DATE_ADD('2025-09-26 10:30:00', INTERVAL 3 DAY), INTERVAL 1 DAY), INTERVAL 1 HOUR)
+WHEN 2 THEN DATE_ADD(DATE_ADD(DATE_ADD('2025-10-21 14:30:00', INTERVAL 3 DAY), INTERVAL 1 DAY), INTERVAL 1 HOUR)
+WHEN 3 THEN DATE_ADD(DATE_ADD(DATE_ADD('2025-06-02 12:00:00', INTERVAL 3 DAY), INTERVAL 1 DAY), INTERVAL 1 HOUR)
+WHEN 4 THEN DATE_ADD(DATE_ADD(DATE_ADD('2025-11-16 14:00:00', INTERVAL 3 DAY), INTERVAL 1 DAY), INTERVAL 1 HOUR)
+WHEN 5 THEN DATE_ADD(DATE_ADD(DATE_ADD('2025-09-21 10:00:00', INTERVAL 3 DAY), INTERVAL 1 DAY), INTERVAL 1 HOUR)
+WHEN 6 THEN DATE_ADD(DATE_ADD(DATE_ADD('2025-11-06 16:30:00', INTERVAL 3 DAY), INTERVAL 1 DAY), INTERVAL 1 HOUR)
+WHEN 7 THEN DATE_ADD(DATE_ADD(DATE_ADD('2025-09-11 12:30:00', INTERVAL 3 DAY), INTERVAL 1 DAY), INTERVAL 1 HOUR)
+WHEN 8 THEN DATE_ADD(DATE_ADD(DATE_ADD('2025-12-01 11:00:00', INTERVAL 3 DAY), INTERVAL 1 DAY), INTERVAL 1 HOUR)
+WHEN 9 THEN DATE_ADD(DATE_ADD(DATE_ADD('2025-12-11 15:30:00', INTERVAL 3 DAY), INTERVAL 1 DAY), INTERVAL 1 HOUR)
+WHEN 10 THEN DATE_ADD(DATE_ADD(DATE_ADD('2025-02-21 09:30:00', INTERVAL 3 DAY), INTERVAL 1 DAY), INTERVAL 1 HOUR)
+WHEN 11 THEN DATE_ADD(DATE_ADD(DATE_ADD('2025-06-21 14:30:00', INTERVAL 3 DAY), INTERVAL 1 DAY), INTERVAL 1 HOUR)
+WHEN 12 THEN DATE_ADD(DATE_ADD(DATE_ADD('2025-08-11 11:30:00', INTERVAL 3 DAY), INTERVAL 1 DAY), INTERVAL 1 HOUR)
+END
+WHERE id BETWEEN 1 AND 12;
+
+
+
+INSERT INTO `activity_feedback` (`activity_id`, `user_id`, `content`, `score`, `image_paths`, `status`)
+VALUES 
+(1742090833549, 1, '音乐节现场氛围超棒！工业风的舞台设计很独特，乐队表演也很精彩。', 4, 'https://example.com/feedback/music_festival_1.jpg,https://example.com/feedback/music_festival_2.jpg', 1),
+(1742090833550, 1, '研讨会内容很专业，专家分享的案例对我的工作有很大启发，建议增加互动环节。', 5, 'https://example.com/feedback/seminar_1.jpg', 1),
+(1742090833551, 1, '和孩子一起体验了包粽子和工业主题手作，活动设计很用心，孩子玩得很开心。', 5, '', 1),
+(1742090833552, 1, '摄影展的作品质量很高，工业主题的视角很新颖，希望以后多举办类似展览。', 4, 'https://example.com/feedback/photography_1.jpg', 1),
+(1742090833553, 1, '科普讲座内容通俗易懂，讲师讲解清晰，建议增加问答环节。', 3, '', 1),
+(1742090833554, 1, '手作工作坊的材料很充足，老师指导耐心，完成了一个工业风台灯，很有成就感。', 5, 'https://example.com/feedback/handicraft_1.jpg', 1),
+(1742090833555, 1, '听老工业人的故事很感动，感受到了工业发展背后的艰辛与荣耀，希望多举办此类活动。', 5, '', 1),
+(1742090833556, 1, '科技成果展示会看到了很多前沿技术，收获很大，部分展品的互动性可以再加强。', 4, 'https://example.com/feedback/tech_exhibition_1.jpg', 1),
+(1742090833557, 1, '模型搭建大赛很有挑战性，和其他参赛者交流学到了很多技巧，期待下次参赛。', 4, 'https://example.com/feedback/model_competition_1.jpg', 1),
+(1742090833558, 1, '绘画大赛提交的作品获得了优秀奖，感谢主办方提供的平台，会继续努力创作。', 5, 'https://example.com/feedback/painting_1.jpg', 1),
+(1742090833559, 1, '自动化技术培训课程安排合理，讲师实战经验丰富，希望增加实践操作课时。', 4, '', 1),
+(1742090833560, 1, '环保论坛讨论的议题很有现实意义，专家提出的解决方案很有参考价值，收获满满。', 5, 'https://example.com/feedback/forum_1.jpg', 1);
+
+
+INSERT INTO `activity_enroll` (`id`, `yonghuming`, `aname`, `atype`, `aetime`, `aestate`, `aenote`, `clicktime`)
+VALUES 
+(1, '李华', '工业风音乐节嗨起来', '文化活动类', '2025-09-26 10:30:00', '已报名', '一直喜欢工业风的音乐，很期待这次音乐节', '2025-09-26 10:25:00'),
+(2, '王丽', '聊聊工业未来发展研讨会', '学术研究类', '2025-10-21 14:30:00', '已审核', '通过审核了，希望能在研讨会上学到很多新的知识', '2025-10-21 14:20:00'),
+(3, '张涛', '端午节工业民俗体验活动', '文化活动类', '2025-06-02 12:00:00', '已报名', '想带孩子来感受一下传统节日和工业文化的结合，应该很有趣', '2025-06-02 11:50:00'),
+(4, '刘悦', '工业摄影作品展览', '展览展示类', '2025-11-16 14:00:00', '已报名', '平时就喜欢摄影，这次可以看看工业摄影作品，学习一下', '2025-11-16 13:50:00'),
+(5, '陈刚', '工业知识科普讲座', '教育活动类', '2025-09-21 10:00:00', '已报名', '感觉工业知识很有用，来充实一下自己', '2025-09-21 09:50:00'),
+(6, '赵琳', '工业创意手作工作坊', '教育活动类', '2025-11-06 16:30:00', '已缴费', '交了费，准备在工作坊发挥一下自己的创意，做个独特的手工艺品', '2025-11-06 16:20:00'),
+(7, '吴迪', '工业历史故事分享会', '文化活动类', '2025-09-11 12:30:00', '已报名', '对工业历史很感兴趣，想听老工业人们分享他们的故事', '2025-09-11 12:20:00'),
+(8, '郑辉', '工业科技成果展示会', '展览展示类', '2025-12-01 11:00:00', '已预约', '预约好了，想了解一下最新的工业科技成果，看看对自己的工作有没有帮助', '2025-12-01 10:50:00'),
+(9, '孙明', '工业机械模型搭建大赛', '教育活动类', '2025-12-11 15:30:00', '已报名', '已经准备好了工具，要在大赛中展示自己的搭建技巧', '2025-12-11 15:25:00'),
+(10, '周敏', '工业艺术绘画大赛', '文化活动类', '2025-02-21 09:30:00', '已提交作品', '我提交了一幅以工业建筑为主题的绘画，希望能取得好成绩', '2025-02-21 09:20:00'),
+(11, '徐峰', '工业自动化技术培训', '教育活动类', '2025-06-21 14:30:00', '已缴费', '交了培训费，一定要好好学习工业自动化技术，提升自己的技能', '2025-06-21 14:20:00'),
+(12, '马丽', '工业环保主题论坛', '学术研究类', '2025-08-11 11:30:00', '已审核', '审核通过了，期待在论坛上和大家一起探讨工业环保的问题', '2025-08-11 11:20:00');
+
+
+INSERT INTO `activity` (`aname`, `atime`, `apicture`, `aintroduction`, `atype`, `aaddress`, `anumber`, `anote`, `aannounce`, `acomment`, `acollect`, `aenroll`, `clicktime`, `clicknum`)
+VALUES 
+('工业风音乐节嗨起来', '2025年10月20日 18:00 - 22:00', 'https://dummyimage.com/800x600/ff0000/ffffff&text=Industrial+Music+Festival', '摇滚、民谣等多种音乐风格，在工业氛围中释放激情。', '文化活动类', '中国工业博物院户外广场', 1000, '需提前购票', '2025-09-25 10:00:00', 25, 35, 'https://example.com/enroll/industrial_music_festival', '2025-09-25 10:00:00', 150),
+('聊聊工业未来发展研讨会', '2025年11月10日 - 2025年11月11日', 'https://dummyimage.com/800x600/00ff00/ffffff&text=Industrial+Future+Seminar', '专家们一起探讨工业未来的发展方向和技术创新。', '学术研究类', '中国工业博物院3楼会议室', 60, '需提前报名审核', '2025-10-20 14:00:00', 12, 20, 'https://example.com/enroll/future_industrial_seminar', '2025-10-20 14:00:00', 80),
+('端午节工业民俗体验活动', '2025年6月8日 - 2025年6月10日', 'https://dummyimage.com/800x600/0000ff/ffffff&text=Dragon+Boat+Festival+Activity', '包粽子、做香囊，感受传统节日与工业文化的融合。', '文化活动类', '中国工业博物院民俗体验区', 200, '适合亲子参与', '2025-06-01 11:30:00', 18, 25, 'https://example.com/enroll/dragon_boat_festival_activity', '2025-06-01 11:30:00', 90),
+('工业摄影作品展览', '2025年12月1日 - 2025年12月31日', 'https://dummyimage.com/800x600/ffff00/ffffff&text=Industrial+Photography+Exhibition', '展示众多优秀的工业摄影作品，领略工业之美。', '展览展示类', '中国工业博物院2号展厅', 600, '免费参观', '2025-11-15 13:45:00', 22, 32, 'https://example.com/enroll/industrial_photography_exhibition', '2025-11-15 13:45:00', 110),
+('工业知识科普讲座', '2025年10月5日 14:00 - 16:00', 'https://dummyimage.com/800x600/ff00ff/ffffff&text=Industrial+Knowledge+Lecture', '专业讲师讲解工业基础知识和发展历程。', '教育活动类', '中国工业博物院报告厅', 150, '可现场报名参加', '2025-09-20 09:30:00', 10, 15, 'https://example.com/enroll/industrial_knowledge_lecture', '2025-09-20 09:30:00', 70),
+('工业创意手作工作坊', '2025年11月25日 - 2025年11月26日', 'https://dummyimage.com/800x600/00ffff/ffffff&text=Industrial+Handicraft+Workshop', '发挥创意，用工业材料制作手工艺品。', '教育活动类', '中国工业博物院手作工作室', 50, '需提前报名缴费', '2025-11-05 16:15:00', 8, 12, 'https://example.com/enroll/industrial_handicraft_workshop', '2025-11-05 16:15:00', 60),
+('工业历史故事分享会', '2025年9月25日 19:30 - 21:30', 'https://dummyimage.com/800x600/800000/ffffff&text=Industrial+Story+Sharing', '邀请老工业人分享他们的故事和经历。', '文化活动类', '中国工业博物院交流室', 120, '免费参与', '2025-09-10 12:00:00', 16, 22, 'https://example.com/enroll/industrial_story_sharing', '2025-09-10 12:00:00', 85),
+('工业科技成果展示会', '2025年12月15日 - 2025年12月25日', 'https://dummyimage.com/800x600/008000/ffffff&text=Industrial+Tech+Exhibition', '展示最新的工业科技成果和创新产品。', '展览展示类', '中国工业博物院科技展厅', 700, '需提前预约', '2025-11-30 10:45:00', 28, 38, 'https://example.com/enroll/industrial_tech_exhibition', '2025-11-30 10:45:00', 130),
+('工业机械模型搭建大赛', '2025年12月28日 - 2025年12月29日', 'https://dummyimage.com/800x600/808000/ffffff&text=Industrial+Machine+Model+Competition', '参与者使用各类工业机械模型套件进行搭建比拼，展现工业机械之美与创造力。', '教育活动类', '中国工业博物院模型搭建区', 200, '需提前报名，自带工具', '2025-12-10 15:20:00', 15, 22, 'https://example.com/enroll/industrial_machine_model_competition', '2025-12-10 15:20:00', 95),
+('工业艺术绘画大赛', '2025年3月15日 - 2025年3月30日', 'https://dummyimage.com/800x600/ff8000/ffffff&text=Industrial+Art+Painting+Competition', '面向绘画爱好者，以工业元素为主题创作绘画作品参赛。', '文化活动类', '中国工业博物院艺术展厅', 300, '线上线下均可报名，提交作品截止至3月20日', '2025-02-20 09:00:00', 10, 18, 'https://example.com/enroll/industrial_art_painting_competition', '2025-02-20 09:00:00', 75),
+('工业自动化技术培训', '2025年7月10日 - 2025年7月14日', 'https://dummyimage.com/800x600/008080/ffffff&text=Industrial+Automation+Training', '邀请行业专家授课，培训工业自动化相关技术知识与实操技能。', '教育活动类', '中国工业博物院培训中心', 80, '需缴纳培训费用，提前一周报名截止', '2025-06-20 14:00:00', 12, 20, 'https://example.com/enroll/industrial_automation_training', '2025-06-20 14:00:00', 80),
+('工业环保主题论坛', '2025年9月1日 - 2025年9月2日', 'https://dummyimage.com/800x600/800080/ffffff&text=Industrial+Environmental+Protection+Forum', '围绕工业环保话题，探讨绿色工业发展路径与解决方案。', '学术研究类', '中国工业博物院会议中心', 150, '参会需提前注册审核', '2025-08-10 11:00:00', 14, 25, 'https://example.com/enroll/industrial_environmental_protection_forum', '2025-08-10 11:00:00', 90);
